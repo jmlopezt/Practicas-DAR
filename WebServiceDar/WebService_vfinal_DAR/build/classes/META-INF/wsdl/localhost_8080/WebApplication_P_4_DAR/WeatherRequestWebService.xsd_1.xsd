@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://Weather/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Weather/">
+
+<xs:element name="ObtainXmlData" type="tns:ObtainXmlData" />
+
+<xs:element name="ObtainXmlDataResponse" type="tns:ObtainXmlDataResponse" />
+
+<xs:element name="getDateTime" type="tns:getDateTime" />
+
+<xs:element name="getDateTimeResponse" type="tns:getDateTimeResponse" />
+
+<xs:element name="getHumidity" type="tns:getHumidity" />
+
+<xs:element name="getHumidityResponse" type="tns:getHumidityResponse" />
+
+<xs:element name="getParameters" type="tns:getParameters" />
+
+<xs:element name="getParametersResponse" type="tns:getParametersResponse" />
+
+<xs:element name="getPressure" type="tns:getPressure" />
+
+<xs:element name="getPressureResponse" type="tns:getPressureResponse" />
+
+<xs:element name="getTemperature" type="tns:getTemperature" />
+
+<xs:element name="getTemperatureResponse" type="tns:getTemperatureResponse" />
+
+<xs:element name="getVisibility" type="tns:getVisibility" />
+
+<xs:element name="getVisibilityResponse" type="tns:getVisibilityResponse" />
+
+<xs:element name="hello" type="tns:hello" />
+
+<xs:element name="helloResponse" type="tns:helloResponse" />
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="City" type="xs:string" minOccurs="0" />
+<xs:element name="Country" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getParameters">
+<xs:sequence>
+<xs:element name="cityName" type="xs:string" minOccurs="0" />
+<xs:element name="countryName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getParametersResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getVisibility">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getVisibilityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHumidity">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getHumidityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTemperature">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getTemperatureResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ObtainXmlData">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="etiqueta" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ObtainXmlDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPressure">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getPressureResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDateTime">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getDateTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

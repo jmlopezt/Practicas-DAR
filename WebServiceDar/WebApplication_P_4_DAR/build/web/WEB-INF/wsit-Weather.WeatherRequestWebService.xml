@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="WeatherRequestWebService" targetNamespace="http://Weather/" xmlns:tns="http://Weather/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" 
+ >
+    <message name="hello"/>
+    <message name="helloResponse"/>
+    <message name="ObtainXmlData"/>
+    <message name="ObtainXmlDataResponse"/>
+    <message name="getParameters"/>
+    <message name="getParametersResponse"/>
+    <message name="getTemperature"/>
+    <message name="getTemperatureResponse"/>
+    <message name="getPressure"/>
+    <message name="getPressureResponse"/>
+    <message name="getHumidity"/>
+    <message name="getHumidityResponse"/>
+    <message name="getVisibility"/>
+    <message name="getVisibilityResponse"/>
+    <message name="getDateTime"/>
+    <message name="getDateTimeResponse"/>
+    <portType name="WeatherRequestWebService">
+        <operation name="hello">
+            <input message="tns:hello"/>
+            <output message="tns:helloResponse"/>
+        </operation>
+        <operation name="ObtainXmlData">
+            <input message="tns:ObtainXmlData"/>
+            <output message="tns:ObtainXmlDataResponse"/>
+        </operation>
+        <operation name="getParameters">
+            <input message="tns:getParameters"/>
+            <output message="tns:getParametersResponse"/>
+        </operation>
+        <operation name="getTemperature">
+            <input message="tns:getTemperature"/>
+            <output message="tns:getTemperatureResponse"/>
+        </operation>
+        <operation name="getPressure">
+            <input message="tns:getPressure"/>
+            <output message="tns:getPressureResponse"/>
+        </operation>
+        <operation name="getHumidity">
+            <input message="tns:getHumidity"/>
+            <output message="tns:getHumidityResponse"/>
+        </operation>
+        <operation name="getVisibility">
+            <input message="tns:getVisibility"/>
+            <output message="tns:getVisibilityResponse"/>
+        </operation>
+        <operation name="getDateTime">
+            <input message="tns:getDateTime"/>
+            <output message="tns:getDateTimeResponse"/>
+        </operation>
+    </portType>
+    <binding name="WeatherRequestWebServicePortBinding" type="tns:WeatherRequestWebService">
+        <operation name="hello">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="ObtainXmlData">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getParameters">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getTemperature">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getPressure">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getHumidity">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getVisibility">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getDateTime">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="WeatherRequestWebService">
+        <port name="WeatherRequestWebServicePort" binding="tns:WeatherRequestWebServicePortBinding"/>
+    </service>
+</definitions>

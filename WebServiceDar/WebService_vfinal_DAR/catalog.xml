@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://www.webservicex.net/globalweather.asmx?WSDL" uri="xml-resources/web-service-references/globalweather/wsdl/www.webservicex.net/globalweather.asmx.wsdl"/>
+    <system systemId="http://localhost:8080/WebApplication_P_4_DAR/WeatherRequestWebService?wsdl" uri="xml-resources/web-service-references/WeatherRequestWebService/wsdl/localhost_8080/WebApplication_P_4_DAR/WeatherRequestWebService.wsdl"/>
+    <system systemId="http://localhost:8080/WebApplication_P_4_DAR/WeatherRequestWebService?xsd=1" uri="xml-resources/web-service-references/WeatherRequestWebService/wsdl/localhost_8080/WebApplication_P_4_DAR/WeatherRequestWebService.xsd_1.xsd"/>
+</catalog>
